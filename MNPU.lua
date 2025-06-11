@@ -1,8 +1,3 @@
---[[
-Script ini akan membuat menu pop-up dengan tombol switch on/off
-untuk mengaktifkan atau menonaktifkan fungsi tertentu, serta fitur minimize.
-]]
-
 -- Services
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
@@ -178,24 +173,24 @@ game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit
 end
 
 local function onSecondScriptEnabled()
-while true do 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-    end 
-    
-    wait(.10) 
+	while true do 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+	end
+		wait(.10) 
 end
 
 
 -- Memeriksa status script setiap detik
 while true do
-    wait(.25)
-    
-    if scriptEnabled then
-        onScriptEnabled()
-    end
-        
-    if SecondScriptEnabled then
-        onSecondScriptEnabled()
-    end
+wait(.25)
+	
+	if scriptEnabled then
+		onScriptEnabled()
+	end
+	
+	if SecondScriptEnabled then
+		onSecondScriptEnabled()
+	end
     
 end

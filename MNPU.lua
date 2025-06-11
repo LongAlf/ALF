@@ -189,7 +189,6 @@ wait(.25)
 	
 	if SecondScriptEnabled then
 		onSecondScriptEnabled()
-		onSecondScriptEnabled()
 	end
     
 end

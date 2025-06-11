@@ -145,31 +145,6 @@ createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onScriptEnabled()
-    -- Mendapatkan RemoteEvent
-    local remoteEvent = ReplicatedStorage:WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ToolService"):WaitForChild("RE"):WaitForChild("onClick")
-    -- Memastikan RemoteEvent ditemukan
-    if remoteEvent then
-        -- Memanggil RemoteEvent dua kali
-        remoteEvent:FireServer()
-local args = {
-	"0",
-	"Dumbells",
-	"250Kg"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ToolService"):WaitForChild("RE"):WaitForChild("onGuiEquipRequest"):FireServer(unpack(args))
-
-        remoteEvent:FireServer()
-        remoteEvent:FireServer()
-        wait(0.1)
-local args = {
-	"0",
-	"Dumbells",
-	"250Kg"
-}
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ToolService"):WaitForChild("RE"):WaitForChild("onGuiEquipRequest"):FireServer(unpack(args))
-    else
-        warn("RemoteEvent tidak ditemukan!")
-    end
 end
 
 local function onSecondScriptEnabled()

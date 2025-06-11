@@ -173,7 +173,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit
 end
 
 local function onSecondScriptEnabled()
-	wait(.10)
+	wait(1)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 end
@@ -188,6 +188,7 @@ wait(.25)
 	end
 	
 	if SecondScriptEnabled then
+		onSecondScriptEnabled()
 		onSecondScriptEnabled()
 	end
     

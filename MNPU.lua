@@ -173,11 +173,13 @@ game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit
 end
 
 local function onSecondScriptEnabled()
-	while true do 
+	while true do
+	wait(.10)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+	else
+		warn("RemoteEvent tidak ditemukan!")
 	end
-		wait(.10) 
 end
 
 

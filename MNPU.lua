@@ -179,7 +179,7 @@ end
 
 local function onSecondScriptEnabled()
 while true do 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/InstanWin.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end 
     
     wait(.10) 

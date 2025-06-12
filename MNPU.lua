@@ -159,7 +159,7 @@ local function onSc2Enabled()
     end)
     
     if not success1 then
-        warn("Gagal memuat IW.lua: " .. err1)
+        print("Gagal memuat IW.lua: " .. err1)
     end
 
     local success2, err2 = pcall(function()
@@ -167,10 +167,9 @@ local function onSc2Enabled()
     end)
 
     if not success2 then
-        warn("Gagal memuat ITC.lua: " .. err2)
+        print("Gagal memuat ITC.lua: " .. err2)
     end
     wait(.35)
-	print(".")
 end
 
 -- Memeriksa status script setiap detik

@@ -8,9 +8,11 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local Sc1Enabled = false -- Status awal script
--- local Second Script
-local SC2 = false
+
+-- local+global Second Script
+SC2 = false
 local Sc2Enabled = false
+
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
 
@@ -172,9 +174,9 @@ wait(.25)
 	
 	if Sc2Enabled then
 		print("sc2")
-		local SC2 = true
+		SC2 = true
 		onSc2Enabled()
 	else
-		local SC2 = false
+		SC2 = false
 	end
 end

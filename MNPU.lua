@@ -12,6 +12,8 @@ local Sc1Enabled = false -- Status awal script
 -- local+global Second Script
 SC2 = false
 local Sc2Enabled = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
@@ -179,8 +181,3 @@ wait(.25)
 		SC2 = false
 	end
 end
-
-
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()

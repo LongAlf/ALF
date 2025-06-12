@@ -179,5 +179,6 @@ wait(.25)
 		print("sc2")
 		onSc2Enabled()
 		CRITHIT()
+		TAPCLICK()
 	end
 end

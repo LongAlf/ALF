@@ -169,7 +169,7 @@ end
 
 -- Memeriksa status script setiap detik
 while true do
-wait(.20)
+wait(0.2)
 	if Sc1Enabled then
 		print("Sc1")
 		onSc1Enabled()

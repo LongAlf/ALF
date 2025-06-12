@@ -164,13 +164,6 @@ local function onSc2Enabled()
 end
 
 
-if SC2 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()	
-	wait(0.1)
-end
-
-
 -- Memeriksa status script setiap detik
 while true do
 wait(.25)
@@ -181,9 +174,7 @@ wait(.25)
 	
 	if Sc2Enabled then
 		print("sc2")
-		SC2 = true
 		onSc2Enabled()
-	else
-		SC2 = false
+		CRITHIT()
 	end
 end

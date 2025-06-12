@@ -164,7 +164,7 @@ local function onSc2Enabled()
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit"):InvokeServer()
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit"):InvokeServer()
 		game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit"):InvokeServer()
-		wait(.35)
+		wait(0.1)
 	end
 	-- print("..")
         -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()

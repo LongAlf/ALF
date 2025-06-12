@@ -8,7 +8,7 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local Sc1Enabled = false -- Status awal script
-local Script2Enabled = false
+local Sc2Enabled = false
 local secondButtonEnabled = false -- Status tombol kedua
 local minimized = false -- Status minimize
 
@@ -94,8 +94,8 @@ local function createUI()
 
     -- Fungsi untuk mengubah status tombol kedua
     local function toggleSecondButton()
-        Script2Enabled = not Script2Enabled
-        if Script2Enabled then
+        Sc2Enabled = not Sc2Enabled
+        if Sc2Enabled then
             secondToggleButton.Text = "CritHit On"
             print("Tombol kedua diaktifkan!")
             -- Tambahkan fungsi yang ingin Anda aktifkan di sini
@@ -153,7 +153,7 @@ local function onSc1Enabled()
 	game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
 end
 
-local function on2ScriptEnabled()
+local function onSc2Enabled()
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)
@@ -170,6 +170,7 @@ local function on2ScriptEnabled()
         warn("Gagal memuat ITC.lua: " .. err2)
     end
     wait(.35)
+	print(".")
 end
 
 -- Memeriksa status script setiap detik
@@ -180,8 +181,8 @@ wait(.25)
 		onSc1Enabled()
 	end
 	
-	if Script2Enabled then
+	if Sc2Enabled then
 		print("sc2")
-		on2ScriptEnabled()
+		onSc2Enabled()
 	end
 end

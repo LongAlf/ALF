@@ -7,8 +7,8 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
-local scriptEnabled = false -- Status awal script
-local SecondScriptEnabled = false
+local Sc1Enabled = false -- Status awal script
+local Script2Enabled = false
 local secondButtonEnabled = false -- Status tombol kedua
 local minimized = false -- Status minimize
 
@@ -76,8 +76,8 @@ local function createUI()
 
     -- Fungsi untuk mengubah status script
     local function toggleScript()
-        scriptEnabled = not scriptEnabled
-        if scriptEnabled then
+        Sc1Enabled = not Sc1Enabled
+        if Sc1Enabled then
             toggleButton.Text = "Turn On"
             print("Script diaktifkan!")
             -- Tambahkan fungsi yang ingin Anda aktifkan di sini
@@ -144,7 +144,7 @@ end
 createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
-local function onScriptEnabled()
+local function onSc1Enabled()
 	
 	local args = {
 		"VillainDucky",
@@ -179,9 +179,9 @@ end
 while true do
 wait(.25)
 	
-	if scriptEnabled then
+	if Sc1Enabled then
 		Print("Sc1")
-		onScriptEnabled()
+		onSc1Enabled()
 	end
 	
 	if Script2Enabled then

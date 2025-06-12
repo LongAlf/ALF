@@ -155,22 +155,9 @@ end
 
 local function onSc2Enabled()
 	print("..")
-    local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-    end)
-    
-    if not success1 then
-        print("Gagal memuat IW.lua: " .. err1)
-    end
-
-    local success2, err2 = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
-    end)
-
-    if not success2 then
-        print("Gagal memuat ITC.lua: " .. err2)
-    end
-    wait(.35)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+	wait(.35)
 end
 
 -- Memeriksa status script setiap detik

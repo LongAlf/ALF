@@ -94,8 +94,8 @@ local function createUI()
 
     -- Fungsi untuk mengubah status tombol kedua
     local function toggleSecondButton()
-        SecondScriptEnabled = not SecondScriptEnabled
-        if SecondScriptEnabled then
+        Script2Enabled = not Script2Enabled
+        if Script2Enabled then
             secondToggleButton.Text = "CritHit On"
             print("Tombol kedua diaktifkan!")
             -- Tambahkan fungsi yang ingin Anda aktifkan di sini
@@ -147,7 +147,7 @@ createUI()
 local function onScriptEnabled()
 end
 
-local function onSecondScriptEnabled()
+local function on2ScriptEnabled()
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)
@@ -172,11 +172,13 @@ while true do
 wait(.25)
 	
 	if scriptEnabled then
+		Print("Sc1")
 		onScriptEnabled()
 	end
 	
-	if SecondScriptEnabled then
-		onSecondScriptEnabled()
+	if Script2Enabled then
+		print("sc2")
+		on2ScriptEnabled()
 	end
     
 end

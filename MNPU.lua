@@ -145,9 +145,17 @@ createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onScriptEnabled()
+	
+	local args = {
+		"VillainDucky",
+		[4] = false
+	}
+	game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
+
 end
 
 local function on2ScriptEnabled()
+	
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)

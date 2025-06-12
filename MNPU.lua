@@ -9,7 +9,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 
 local Sc1Enabled = false -- Status awal script
 local Sc2Enabled = false
-local secondButtonEnabled = false -- Status tombol kedua
+-- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
 
 -- Fungsi untuk membuat UI
@@ -157,6 +157,7 @@ local function onSc2Enabled()
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)
+	print("Exec: " .. err1)
     
     if not success1 then
         print("Gagal memuat IW.lua: " .. err1)
@@ -165,6 +166,7 @@ local function onSc2Enabled()
     local success2, err2 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
     end)
+	print("Exec: " .. err1)
 
     if not success2 then
         print("Gagal memuat ITC.lua: " .. err2)

@@ -8,6 +8,8 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local Sc1Enabled = false -- Status awal script
+-- local Second Script
+local SC2 = false
 local Sc2Enabled = false
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
@@ -155,8 +157,8 @@ end
 
 local function onSc2Enabled()
 	print("..")
-        -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-	-- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 	wait(.35)
 end
 
@@ -170,8 +172,9 @@ wait(.25)
 	
 	if Sc2Enabled then
 		print("sc2")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+		local SC2 = true
 		onSc2Enabled()
+	else
+		local SC2 = false
 	end
 end

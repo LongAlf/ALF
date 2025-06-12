@@ -154,10 +154,10 @@ local function onSc1Enabled()
 end
 
 local function onSc2Enabled()
+	print("..")
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)
-	print("Exec: " .. err1)
     
     if not success1 then
         print("Gagal memuat IW.lua: " .. err1)
@@ -166,7 +166,6 @@ local function onSc2Enabled()
     local success2, err2 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
     end)
-	print("Exec: " .. err1)
 
     if not success2 then
         print("Gagal memuat ITC.lua: " .. err2)

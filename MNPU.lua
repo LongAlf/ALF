@@ -15,7 +15,7 @@ local Sc1Enabled = false -- Status awal script
 SC2 = false
 local Sc2Enabled = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 
 
 -- local secondButtonEnabled = false Status tombol kedua
@@ -179,6 +179,6 @@ wait(0.1)
 		print("sc2")
 		onSc2Enabled()
 		CRITHIT()
-		TAPCLICK()
+		--TAPCLICK()
 	end
 end

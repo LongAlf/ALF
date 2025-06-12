@@ -17,7 +17,6 @@ local Sc2Enabled = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 
-
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
 
@@ -180,31 +179,30 @@ createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onSc1Enabled()
-	print(".")
-	local args = {
-		"VillainDucky",
-		[4] = false
-	}
-	game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
+    print(".")
+    local args = {
+        "VillainDucky",
+        [4] = false
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
 end
 
 local function onSc2Enabled()
-	-- print("..")
+    -- print("..")
 end
-
 
 -- Memeriksa status script setiap detik
 while true do
-wait(.10)
-	if Sc1Enabled then
-		print("Sc1")
-		onSc1Enabled()
-	end
-	
-	if Sc2Enabled then
-		print("sc2")
-		onSc2Enabled()
-		CRITHIT()
-		--TAPCLICK()
-	end
+    wait(.10)
+    if Sc1Enabled then
+        print("Sc1")
+        onSc1Enabled()
+    end
+    
+    if Sc2Enabled then
+        print("sc2")
+        onSc2Enabled()
+        CRITHIT()
+        --TAPCLICK()
+    end
 end

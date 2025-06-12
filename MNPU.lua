@@ -180,7 +180,7 @@ while true do
 wait(.25)
 	
 	if Sc1Enabled then
-		Print("Sc1")
+		print("Sc1")
 		onSc1Enabled()
 	end
 	

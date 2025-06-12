@@ -145,17 +145,15 @@ createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onSc1Enabled()
-	
+	print(".")
 	local args = {
 		"VillainDucky",
 		[4] = false
 	}
 	game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
-
 end
 
 local function on2ScriptEnabled()
-	
     local success1, err1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
     end)
@@ -171,14 +169,12 @@ local function on2ScriptEnabled()
     if not success2 then
         warn("Gagal memuat ITC.lua: " .. err2)
     end
-
     wait(.35)
 end
 
 -- Memeriksa status script setiap detik
 while true do
 wait(.25)
-	
 	if Sc1Enabled then
 		print("Sc1")
 		onSc1Enabled()
@@ -188,5 +184,4 @@ wait(.25)
 		print("sc2")
 		on2ScriptEnabled()
 	end
-    
 end

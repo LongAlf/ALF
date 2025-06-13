@@ -15,7 +15,7 @@ local Sc1Enabled = false -- Status awal script
 SC2 = false
 local Sc2Enabled = false
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
@@ -195,6 +195,9 @@ local function onSc2Enabled()
         remoteEvent:InvokeServer()
         remoteEvent:InvokeServer()
         remoteEvent:InvokeServer()
+        remoteEvent:InvokeServer()
+        remoteEvent:InvokeServer()
+        remoteEvent:InvokeServer()
 else
     print("RemoteEvent tidak ditemukan!")
     end
@@ -202,7 +205,7 @@ end
 
 -- Memeriksa status script setiap detik
 while true do
-    wait(0.1)
+    wait(.1)
     if Sc1Enabled then
         print("Sc1")
         onSc1Enabled()
@@ -211,6 +214,6 @@ while true do
     if Sc2Enabled then
         onSc2Enabled()
         --CRITHIT()
-        TAPCLICK()
+        --TAPCLICK()
     end
 end

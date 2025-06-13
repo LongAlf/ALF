@@ -29,9 +29,6 @@ function CRITHIT()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     -- Memanggil RemoteEvent
-  else
-    print("RemoteEvent tidak ditemukan!")
-  end
 end
 
 --game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit"):InvokeServer()

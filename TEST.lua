@@ -187,12 +187,13 @@ local function onSc1Enabled()
 end
 
 local function onSc2Enabled()
+    game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit"):InvokeServer()
     -- print("..")
 end
 
 -- Memeriksa status script setiap detik
 while true do
-    wait(.2)
+    wait(.1)
     if Sc1Enabled then
         print("Sc1")
         onSc1Enabled()
@@ -201,7 +202,7 @@ while true do
     if Sc2Enabled then
         print("sc2")
         onSc2Enabled()
-        CRITHIT()
+        --CRITHIT()
         --TAPCLICK()
     end
 end

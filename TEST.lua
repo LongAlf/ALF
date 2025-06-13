@@ -179,7 +179,8 @@ createUI()
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onSc1Enabled()
     print(".")
-    game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestEndFight"):InvokeServer()
+    --game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestEndFight"):InvokeServer()
+    --game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WallService"):WaitForChild("RE"):WaitForChild("claimWin"):InvokeServer()
     local args = {
         "VillainDucky",
         [4] = false
@@ -202,7 +203,7 @@ while true do
     end
     
     if Sc2Enabled then
-                --onSc2Enabled()
+        --onSc2Enabled()
         CRITHIT()
         TAPCLICK()
     end

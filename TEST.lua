@@ -195,8 +195,6 @@ local function onSc2Enabled()
         remoteEvent:InvokeServer()
         remoteEvent:InvokeServer()
         remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
 else
     print("RemoteEvent tidak ditemukan!")
     end

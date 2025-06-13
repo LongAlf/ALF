@@ -14,7 +14,7 @@ local Sc1Enabled = false -- Status awal script
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 SC2 = false
 local Sc2Enabled = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 
 -- local secondButtonEnabled = false Status tombol kedua

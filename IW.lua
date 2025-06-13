@@ -107,5 +107,5 @@ if SC2 then
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
-    -- Memanggil RemoteEvent
+    end
 end

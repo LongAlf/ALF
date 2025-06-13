@@ -201,9 +201,9 @@ while true do
     end
     
     if Sc2Enabled then
-        print("sc2")
-        onSc2Enabled()
-        --CRITHIT()
-        --TAPCLICK()
+        --print("sc2")
+        --onSc2Enabled()
+        lCRITHIT()
+        TAPCLICK()
     end
 end

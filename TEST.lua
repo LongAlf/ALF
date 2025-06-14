@@ -12,7 +12,7 @@ local Sc1Enabled = false -- Status awal script
 -- local+global Second Script
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
-SC2 = false
+-- SC2 = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 local Sc2Enabled = false
 
@@ -188,9 +188,10 @@ local function onSc1Enabled()
 end
 
 local function onSc2Enabled()
-    local remoteEvent = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    local remoteEvent = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight
     if remoteEvent then
-        SC2 = true
+        remoteEvent:InvokeServer()
+    --SC2 = true
     -- Memanggil RemoteEvent
 else
     print("RemoteEvent tidak ditemukan!")
@@ -207,8 +208,8 @@ while true do
     
     if Sc2Enabled then
         onSc2Enabled()
-        --if SC2 then
         CRITHIT()
+        --if SC2 then
         --TAPCLICK()
     end
 end

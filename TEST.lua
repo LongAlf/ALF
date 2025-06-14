@@ -14,6 +14,7 @@ local Sc1Enabled = false -- Status awal script
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/ITC.lua"))()
 -- SC2 = false
 local Sc2Enabled = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 
 -- local secondButtonEnabled = false Status tombol kedua
 local minimized = false -- Status minimize
@@ -208,12 +209,8 @@ while true do
     
     if Sc2Enabled then
         onSc2Enabled()
-        CRITHIT()
+        --CRITHIT()
         --if SC2 then
         --TAPCLICK()
     end
-
-
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LongAlf/ALF/refs/heads/main/IW.lua"))()
 end

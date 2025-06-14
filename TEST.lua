@@ -187,9 +187,8 @@ local function onSc1Enabled()
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
 end
 
-
 local function onSc2Enabled()
-    local remoteEvent = ReplicatedStorage.Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    local remoteEvent = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     if remoteEvent then
     -- Memanggil RemoteEvent
         CRITHIT()

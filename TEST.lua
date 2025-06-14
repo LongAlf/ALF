@@ -207,8 +207,8 @@ while true do
     
     if Sc2Enabled then
         onSc2Enabled()
-        if SC2 then
-            CRITHIT()
+        --if SC2 then
+        CRITHIT()
         --TAPCLICK()
     end
 end

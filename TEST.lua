@@ -211,8 +211,8 @@ while true do
     end
     
     if Sc2Enabled then
-        onSc2Enabled()
-        --CRITHIT()
+        --onSc2Enabled()
+        CRITHIT()
         --TAPCLICK()
     end
 end

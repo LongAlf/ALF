@@ -187,9 +187,9 @@ local function onSc1Enabled()
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
 end
 
-local function onSc2Enabled()
+--local function onSc2Enabled()
     --local remoteEvent = 
-    game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    --game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     --if remoteEvent then
     --    remoteEvent:InvokeServer()
     --SC2 = true
@@ -197,7 +197,7 @@ local function onSc2Enabled()
 --else
    -- print("RemoteEvent tidak ditemukan!")
     --end
-end
+--end
 
 -- Memeriksa status script setiap detik
 while true do
@@ -208,8 +208,8 @@ while true do
     end
     
     if Sc2Enabled then
-        onSc2Enabled()
-        --CRITHIT()
+        --onSc2Enabled()
+        CRITHIT()
         --if SC2 then
         --TAPCLICK()
     end

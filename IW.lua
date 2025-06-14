@@ -1,4 +1,6 @@
 function CRITHIT()
+  game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+  wait(.1)
   local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
   if remoteEvent then
     remoteEvent:InvokeServer()

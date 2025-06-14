@@ -1,7 +1,6 @@
-if SC2 then
-  function CRITHIT()
-    local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
-    if remoteEvent then
+function CRITHIT()
+  local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
+  if remoteEvent then
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
@@ -107,5 +106,5 @@ if SC2 then
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
-    end
+  end
 end

@@ -194,9 +194,9 @@ local function onSc2Enabled()
     --    remoteEvent:InvokeServer()
     --SC2 = true
     -- Memanggil RemoteEvent
-else
-    print("RemoteEvent tidak ditemukan!")
-    end
+--else
+   -- print("RemoteEvent tidak ditemukan!")
+    --end
 end
 
 -- Memeriksa status script setiap detik

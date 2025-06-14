@@ -189,7 +189,7 @@ end
 
 
 local function onSc2Enabled()
-    local remoteEvent = Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    local remoteEvent = ReplicatedStorage.Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     if remoteEvent then
     -- Memanggil RemoteEvent
         CRITHIT()

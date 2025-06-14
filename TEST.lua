@@ -188,9 +188,10 @@ local function onSc1Enabled()
 end
 
 local function onSc2Enabled()
-    local remoteEvent = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight
-    if remoteEvent then
-        remoteEvent:InvokeServer()
+    --local remoteEvent = 
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    --if remoteEvent then
+    --    remoteEvent:InvokeServer()
     --SC2 = true
     -- Memanggil RemoteEvent
 else

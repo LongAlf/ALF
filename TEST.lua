@@ -193,8 +193,8 @@ end
 local function onSc2Enabled()
     local remoteEvent = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     if remoteEvent then
+        SC2 = true
     -- Memanggil RemoteEvent
-        CRITHIT()
 else
     print("RemoteEvent tidak ditemukan!")
     end
@@ -210,7 +210,8 @@ while true do
     
     if Sc2Enabled then
         onSc2Enabled()
-        --CRITHIT()
+        if SC2 then
+            CRITHIT()
         --TAPCLICK()
     end
 end

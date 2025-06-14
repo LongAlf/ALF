@@ -187,16 +187,12 @@ local function onSc1Enabled()
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EggService"):WaitForChild("RF"):WaitForChild("purchaseEgg"):InvokeServer(unpack(args))
 end
 
+
 local function onSc2Enabled()
-    local remoteEvent = ReplicatedStorage:WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
+    local remoteEvent = Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     if remoteEvent then
     -- Memanggil RemoteEvent
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
-        remoteEvent:InvokeServer()
+        CRITHIT()
 else
     print("RemoteEvent tidak ditemukan!")
     end
@@ -211,8 +207,8 @@ while true do
     end
     
     if Sc2Enabled then
-        --onSc2Enabled()
-        CRITHIT()
+        onSc2Enabled()
+        --CRITHIT()
         --TAPCLICK()
     end
 end

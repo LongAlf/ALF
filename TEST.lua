@@ -177,7 +177,7 @@ createUI()
 
 -- Fungsi yang akan dijalankan saat script diaktifkan
 local function onSc1Enabled()
-    print(".")
+    game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
     --game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestEndFight"):InvokeServer()
     --game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WallService"):WaitForChild("RE"):WaitForChild("claimWin"):InvokeServer()
     local args = {

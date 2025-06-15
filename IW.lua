@@ -1,7 +1,8 @@
 function CRITHIT()
-  --game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
-  local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
-  if remoteEvent then
+  local RF = game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+  if RF then --game:GetService("ReplicatedStorage").Packages.Knit.Services.ArmWrestleService.RF.RequestStartFight:InvokeServer()
+    local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ArmWrestleService"):WaitForChild("RF"):WaitForChild("RequestCritHit")
+    if remoteEvent then
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
@@ -107,5 +108,6 @@ function CRITHIT()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
     remoteEvent:InvokeServer()
+    end
   end
 end
